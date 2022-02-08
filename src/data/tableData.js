@@ -1,35 +1,28 @@
 export const columns = [
 	{
-		name: 'orderId',
+		name: 'email',
 		required: true,
-		label: 'Order ID',
-		field: 'orderId',
-		align: 'left'
+		label: 'Email',
+		field: 'email',
+		align: 'left',
+		sortable: true
 	},
 	{
-		name: 'recipient',
+		name: 'orderId',
 		align: 'center',
-		label: 'Recipient',
-		field: 'recipient'
+		label: 'Order ID',
+		field: 'orderId'
 	},
 	{
-		name: 'status',
-		label: 'Status',
-		field: 'status'
-	}
-];
-
-export const rows = [
-	{
-		name: 'Test1',
-		orderId: '123',
-		recipient: 'Testik',
-		status: 'in progress'
+		name: 'name',
+		align: 'center',
+		label: 'Name',
+		field: 'name'
 	},
 	{
-		name: 'Test2',
-		orderId: '1234',
-		recipient: 'Testik2',
-		status: 'done'
+		name: 'orderStatus',
+		align: 'center',
+		label: 'Order Status',
+		field: 'orderStatus'
 	}
 ];
