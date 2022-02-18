@@ -1,8 +1,6 @@
 <template>
 	<div class="q-pa-md container">
-		<nav class="header">
-			<img src="./assets/logo2.png" width="200" alt="logo" />
-		</nav>
+		<Header />
 		<main class="column justify-center content">
 			<section class="row justify-center q-mt-lg">
 				<q-card
@@ -63,6 +61,7 @@ import { useQuasar } from 'quasar';
 import { onMounted, reactive, ref } from 'vue';
 import { columns } from './data/tableData';
 import api from './api/api';
+import Header from './components/Header.vue';
 
 const $q = useQuasar();
 $q.dark.set(true);
